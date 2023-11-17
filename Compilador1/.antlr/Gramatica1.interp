@@ -1,0 +1,22 @@
+token literal names:
+null
+'Era uma vez'
+null
+null
+null
+
+token symbolic names:
+null
+INICIO
+CONECTOR
+NOME
+ESPACO
+
+rule names:
+raiz_programa
+comeco
+personagem
+
+
+atn:
+[4, 1, 4, 16, 2, 0, 7, 0, 2, 1, 7, 1, 2, 2, 7, 2, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 2, 1, 2, 0, 0, 3, 0, 2, 4, 0, 0, 12, 0, 6, 1, 0, 0, 0, 2, 8, 1, 0, 0, 0, 4, 13, 1, 0, 0, 0, 6, 7, 3, 2, 1, 0, 7, 1, 1, 0, 0, 0, 8, 9, 5, 1, 0, 0, 9, 10, 3, 4, 2, 0, 10, 11, 5, 2, 0, 0, 11, 12, 3, 4, 2, 0, 12, 3, 1, 0, 0, 0, 13, 14, 5, 3, 0, 0, 14, 5, 1, 0, 0, 0, 0]

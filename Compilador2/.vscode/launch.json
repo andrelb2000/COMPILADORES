@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "MeuCompilador",
+            "request": "launch",
+            "mainClass": "MeuCompilador",
+            "projectName": "Compilador2_e6d2a3f6"
+        },
+        {
+            "type": "java",
+            "name": "MeuCompilador",
+            "request": "launch",
+            "mainClass": "MeuCompilador",
+            "projectName": "Compilador1_e6d2a3f5"
+        },
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "pwa-chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+VEZES=1
+ACAO=2
+VARIAS=3
+INICIO=4
+CONECTOR=5
+NOME=6
+PONTO_E_VIRGULA=7
+ESPACO=8
+'vezes'=1
+'andou'=2
+'Era uma vez'=4
+';'=7
