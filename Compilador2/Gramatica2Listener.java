@@ -37,6 +37,16 @@ public interface Gramatica2Listener extends ParseTreeListener {
 	 */
 	void exitDeclaracao(Gramatica2Parser.DeclaracaoContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link Gramatica2Parser#declaracao2}.
+	 * @param ctx the parse tree
+	 */
+	void enterDeclaracao2(Gramatica2Parser.Declaracao2Context ctx);
+	/**
+	 * Exit a parse tree produced by {@link Gramatica2Parser#declaracao2}.
+	 * @param ctx the parse tree
+	 */
+	void exitDeclaracao2(Gramatica2Parser.Declaracao2Context ctx);
+	/**
 	 * Enter a parse tree produced by {@link Gramatica2Parser#personagem}.
 	 * @param ctx the parse tree
 	 */

@@ -1,6 +1,5 @@
 Era uma vez Joao e Maria;
 Joao andou 5 vezes;
 Maria andou 2 vezes;
-
-
-
+Maria pesa 35;
+Se Maria pesa 35 FERROU;

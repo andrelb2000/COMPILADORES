@@ -52,6 +52,18 @@ public class Gramatica2BaseListener implements Gramatica2Listener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterDeclaracao2(Gramatica2Parser.Declaracao2Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitDeclaracao2(Gramatica2Parser.Declaracao2Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterPersonagem(Gramatica2Parser.PersonagemContext ctx) { }
 	/**
 	 * {@inheritDoc}
