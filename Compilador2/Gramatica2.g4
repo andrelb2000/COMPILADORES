@@ -9,7 +9,9 @@ declaracao:INICIO personagem CONECTOR personagem |
            CONDICAO declaracao2 ESPACO CONSEQUENCIA |
            declaracao2;
 
+
 declaracao2: personagem PROPRIEDADE VARIAS;
+
 
 INICIO: 'Era uma vez';
 personagem:NOME;
