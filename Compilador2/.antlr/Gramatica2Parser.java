@@ -102,6 +102,14 @@ public class Gramatica2Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_raiz_programa; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof Gramatica2Listener ) ((Gramatica2Listener)listener).enterRaiz_programa(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof Gramatica2Listener ) ((Gramatica2Listener)listener).exitRaiz_programa(this);
+		}
 	}
 
 	public final Raiz_programaContext raiz_programa() throws RecognitionException {
@@ -144,6 +152,14 @@ public class Gramatica2Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_estoria; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof Gramatica2Listener ) ((Gramatica2Listener)listener).enterEstoria(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof Gramatica2Listener ) ((Gramatica2Listener)listener).exitEstoria(this);
+		}
 	}
 
 	public final EstoriaContext estoria() throws RecognitionException {
@@ -218,6 +234,14 @@ public class Gramatica2Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_declaracao; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof Gramatica2Listener ) ((Gramatica2Listener)listener).enterDeclaracao(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof Gramatica2Listener ) ((Gramatica2Listener)listener).exitDeclaracao(this);
+		}
 	}
 
 	public final DeclaracaoContext declaracao() throws RecognitionException {
@@ -297,6 +321,14 @@ public class Gramatica2Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_declaracao2; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof Gramatica2Listener ) ((Gramatica2Listener)listener).enterDeclaracao2(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof Gramatica2Listener ) ((Gramatica2Listener)listener).exitDeclaracao2(this);
+		}
 	}
 
 	public final Declaracao2Context declaracao2() throws RecognitionException {
@@ -331,6 +363,14 @@ public class Gramatica2Parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_personagem; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof Gramatica2Listener ) ((Gramatica2Listener)listener).enterPersonagem(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof Gramatica2Listener ) ((Gramatica2Listener)listener).exitPersonagem(this);
+		}
 	}
 
 	public final PersonagemContext personagem() throws RecognitionException {
