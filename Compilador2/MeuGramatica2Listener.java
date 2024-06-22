@@ -7,12 +7,10 @@ import java.util.Map;
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.RuleContext;
 import org.antlr.v4.runtime.tree.TerminalNode;
-
 public class MeuGramatica2Listener extends Gramatica2BaseListener{
     FileWriter linguagemFinal = null;
     String ultimoNome = null;
-    Map<String, String> minhasVariaveis = new HashMap<String, String>();
-    
+    Map<String, String> minhasVariaveis = new HashMap<String, String>();   
     public MeuGramatica2Listener() {
         try {
             linguagemFinal = new FileWriter (new File("LinguagemProc.txt"));
@@ -21,7 +19,6 @@ public class MeuGramatica2Listener extends Gramatica2BaseListener{
             e.printStackTrace();
         }
     }
-
     @Override
     public void enterEveryRule(ParserRuleContext ctx) {
         try {
@@ -39,8 +36,7 @@ public class MeuGramatica2Listener extends Gramatica2BaseListener{
                     String valorArmazenado = minhasVariaveis.get(personagem);
                     if(valor.trim().equalsIgnoreCase(valorArmazenado)){
                         linguagemFinal.write(personagem + " " + ctx.getChild(3).getText() + "\n");  
-                    }
-                    
+                    }               
                 }
             }
             org.antlr.v4.runtime.tree.ParseTree no = ctx.getChild(1);
@@ -63,26 +59,12 @@ public class MeuGramatica2Listener extends Gramatica2BaseListener{
             e.printStackTrace();
         }
     }
-
     @Override
     public void exitEveryRule(ParserRuleContext ctx) {
         // TODO Auto-generated method stub
         super.exitEveryRule(ctx);
     }
-
     @Override
     public void visitTerminal(TerminalNode node) {       
-        /* 
-        try {
-            //linguagemFinal.write("Entrando Terminal " + node.getText() + "\n");
-            //linguagemFinal.flush();
-        } catch (IOException e) {
-            System.out.println("Erro de escrita ao arquivo");
-            e.printStackTrace();
-        }*/
-    }
-
-
-    
-    
+    }   
 }
